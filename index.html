@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            http-equiv="X-UA-Compatible"
+            content="IE=edge"
+        />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <title>RoborosX-Internship</title>
+        <link
+            rel="stylesheet"
+            href="/css/style.css"
+        />
+        <script
+            defer
+            src="/script.js"
+        ></script>
+    </head>
+    <body>
+        <header class="header">
+            <a href="#">
+                <img
+                    class="logo"
+                    alt="logo"
+                    src="../img/logo.png"
+                />
+            </a>
+
+            <nav class="main-nav">
+                <ul class="main-nav-list">
+                    <li>
+                        <a
+                            class="main-nav-link"
+                            href="#"
+                            >Home</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            class="main-nav-link"
+                            href="/html/orders.html"
+                            >Orders</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            class="main-nav-link"
+                            href="#"
+                            >Cart</a
+                        >
+                    </li>
+                    <li>
+                        <a class="show-modal">Sign Up</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="modal hidden">
+            <button class="close-modal">&times;</button>
+            <h2>Register With Us</h2>
+            <div class="container">
+                <form
+                    id="form"
+                    class="form"
+                >
+                    <div class="form-control">
+                        <label for="username">Username</label>
+                        <input
+                            type="text"
+                            id="username"
+                            placeholder="Enter Username"
+                            novalidate
+                        />
+                        <small>Error Message</small>
+                    </div>
+                    <div class="form-control">
+                        <label for="password">Password</label>
+                        <input
+                            type="password"
+                            id="password"
+                            placeholder="Enter password"
+                            novalidate
+                        />
+                        <small>Error Message</small>
+                    </div>
+                    <div class="form-control">
+                        <label for="types">Who are you</label>
+
+                        <select id="types">
+                            <option value="user">user</option>
+                            <option value="admin">admin</option>
+                            <option value="vendor">vendor</option>
+                        </select>
+
+                        <small>Error Message</small>
+                    </div>
+
+                    <button>Submit</button>
+                    <div class="signin">
+                        <span>Do you hava account ?</span>
+                        <a href="/html/vendor.html">Sign in</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="overlay hidden"></div>
+        <main>
+            <section class="section-hero">
+                <div class="hero">
+                    <div class="hero-text-box">
+                        <h1 class="heading-primary">
+                            A super devices delivered to your door, every single
+                            day
+                        </h1>
+                        <p class="hero-description">
+                            The smart devices that will make you work effective.
+                            Provides you the best comfort possible.
+                        </p>
+                        <a class="btn btn--full show-modal">Try out now</a>
+                        <div class="delivered-items">
+                            <div class="delivered-imgs">
+                                <img
+                                    src="../img/customers/customer-1.jpg"
+                                    alt="Customer photo"
+                                />
+                                <img
+                                    src="../img/customers/customer-2.jpg"
+                                    alt="Customer photo"
+                                />
+                                <img
+                                    src="../img/customers/customer-3.jpg"
+                                    alt="Customer photo"
+                                />
+                                <img
+                                    src="../img/customers/customer-4.jpg"
+                                    alt="Customer photo"
+                                />
+                                <img
+                                    src="../img/customers/customer-5.jpg"
+                                    alt="Customer photo"
+                                />
+                                <img
+                                    src="../img/customers/customer-6.jpg"
+                                    alt="Customer photo"
+                                />
+                            </div>
+                            <p class="delivered-text">
+                                <span>2,500+</span> devices delivered every
+                                week!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="hero-img-box">
+                        <img
+                            src="../img/game-moniter.jpg"
+                            class="hero-img"
+                            alt="hero-img"
+                        />
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
